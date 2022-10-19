@@ -2,8 +2,9 @@ package hello.core.discount;
 
 import hello.core.member.Grade;
 import hello.core.member.Member;
+import hello.core.member.MemoryMemberRepository;
 
-public class FixedDiscountPolicy implements DiscountPolicy {
+public class FixedDiscountPolicy extends MemoryMemberRepository implements DiscountPolicy {
 
     private int discountFixedAmount = 1000; // 1000원 할인
 
